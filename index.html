@@ -131,7 +131,7 @@
 
     <script>
         // ===== 데이터 원본 (사용자 제공 목록) =====
-        const QUESTIONS_RAW = [
+         QUESTIONS_RAW = [
   {
     "question": "The rescue team had to delay operations due to (  &nbsp;&nbsp;&nbsp;) weather conditions in the mountains.",
     "options": [
@@ -146,7 +146,223 @@
     "explanation": "구조대는 산에서의 불리한 기상 조건 때문에 작전을 지연해야 했다.",
     "fullText": "The rescue team had to delay operations due to adverse weather conditions in the mountains."
   },
-            {
+  {
+    question: "She looked ( &nbsp;&nbsp;&nbsp; ) when she couldn’t find her way in the city.",
+    options: ["bewildered", "confident", "composed", "calm"],
+    correct: 0,
+    answer: "bewildered",
+    meaning: "어리둥절한, 당황한",
+    explanation: "그녀는 도시에서 길을 찾지 못했을 때 어리둥절해 보였다.",
+    fullText: "She looked bewildered when she couldn’t find her way in the city."
+  },
+  {
+    question: "It was ( &nbsp;&nbsp;&nbsp; ) to try convincing him once he made up his mind.",
+    options: ["futile", "useful", "effective", "productive"],
+    correct: 0,
+    answer: "futile",
+    meaning: "헛된, 소용없는",
+    explanation: "그가 마음을 정한 후에는 그를 설득하려는 시도는 헛된 일이었다.",
+    fullText: "It was futile to try convincing him once he made up his mind."
+  },
+  {
+    question: "In algebra, letters like x and y are part of the mathematical ( &nbsp;&nbsp;&nbsp; ).",
+    options: ["notation", "confusion", "chaos", "mess"],
+    correct: 0,
+    answer: "notation",
+    meaning: "표기법, 기호",
+    explanation: "대수학에서 x, y 같은 문자는 수학적 표기법의 일부이다.",
+    fullText: "In algebra, letters like x and y are part of the mathematical notation."
+  },
+  {
+    question: "The project faced a major ( &nbsp;&nbsp;&nbsp; ) due to funding cuts.",
+    options: ["setback", "advance", "progress", "improvement"],
+    correct: 0,
+    answer: "setback",
+    meaning: "차질, 좌절",
+    explanation: "그 프로젝트는 예산 삭감으로 큰 차질을 겪었다.",
+    fullText: "The project faced a major setback due to funding cuts."
+  },
+  {
+    question: "New investors should be careful to avoid a common ( &nbsp;&nbsp;&nbsp; ).",
+    options: ["pitfall", "advantage", "benefit", "opportunity"],
+    correct: 0,
+    answer: "pitfall",
+    meaning: "함정, 위험",
+    explanation: "신규 투자자들은 흔한 함정을 피하도록 주의해야 한다.",
+    fullText: "New investors should be careful to avoid a common pitfall."
+  },
+  {
+    question: "The loud ( &nbsp;&nbsp;&nbsp; ) of car horns filled the busy street.",
+    options: ["blare", "silence", "quiet", "stillness"],
+    correct: 0,
+    answer: "blare",
+    meaning: "요란한 소리",
+    explanation: "시끄러운 자동차 경적 소리가 붐비는 거리를 가득 메웠다.",
+    fullText: "The loud blare of car horns filled the busy street."
+  },
+  {
+    question: "The store had a huge ( &nbsp;&nbsp;&nbsp; ) of unsold clothes after the holiday season.",
+    options: ["surplus", "shortage", "deficit", "lack"],
+    correct: 0,
+    answer: "surplus",
+    meaning: "잉여, 과잉",
+    explanation: "그 가게는 연휴 이후 팔리지 않은 옷이 대량으로 남았다.",
+    fullText: "The store had a huge surplus of unsold clothes after the holiday season."
+  },
+  {
+    question: "Her performance managed to ( &nbsp;&nbsp;&nbsp; ) all expectations.",
+    options: ["surpass", "fall short of", "fail", "underperform"],
+    correct: 0,
+    answer: "surpass",
+    meaning: "능가하다, 뛰어넘다",
+    explanation: "그녀의 공연은 모든 기대를 뛰어넘었다.",
+    fullText: "Her performance managed to surpass all expectations."
+  },
+  {
+    question: "The king was known as a ( &nbsp;&nbsp;&nbsp; ) ruler who cared for his people.",
+    options: ["benevolent", "cruel", "harsh", "merciless"],
+    correct: 0,
+    answer: "benevolent",
+    meaning: "자비로운, 인정 많은",
+    explanation: "그 왕은 백성을 아끼는 자비로운 통치자로 알려졌다.",
+    fullText: "The king was known as a benevolent ruler who cared for his people."
+  },
+  {
+    question: "The U.S. president met with his British ( &nbsp;&nbsp;&nbsp; ) to discuss the issue.",
+    options: ["counterpart", "opposite", "reverse", "antithesis"],
+    correct: 0,
+    answer: "counterpart",
+    meaning: "상대방, 대응하는 사람",
+    explanation: "미국 대통령은 그 문제를 논의하기 위해 영국 총리와 만났다.",
+    fullText: "The U.S. president met with his British counterpart to discuss the issue."
+  },
+  {
+    question: "Basic math skills are an ( &nbsp;&nbsp;&nbsp; ) part of engineering.",
+    options: ["integral", "unnecessary", "nonessential", "trivial"],
+    correct: 0,
+    answer: "integral",
+    meaning: "필수적인, 완전한",
+    explanation: "기초 수학 능력은 공학에서 필수적인 부분이다.",
+    fullText: "Basic math skills are an integral part of engineering."
+  },
+  {
+    question: "Despite the divorce, they maintained an ( &nbsp;&nbsp;&nbsp; ) relationship for the sake of their children.",
+    options: ["amicable", "hostile", "unfriendly", "bitter"],
+    correct: 0,
+    answer: "amicable",
+    meaning: "우호적인, 원만한",
+    explanation: "이혼에도 불구하고 그들은 아이들을 위해 원만한 관계를 유지했다.",
+    fullText: "Despite the divorce, they maintained an amicable relationship for the sake of their children."
+  },
+  {
+    question: "Scratching the mosquito bite will only ( &nbsp;&nbsp;&nbsp; ) the itching.",
+    options: ["aggravate", "relieve", "ease", "soothe"],
+    correct: 0,
+    answer: "aggravate",
+    meaning: "악화시키다",
+    explanation: "모기 물린 자리를 긁으면 가려움만 더 악화될 것이다.",
+    fullText: "Scratching the mosquito bite will only aggravate the itching."
+  },
+  {
+    question: "The view of the sunset over the ocean was absolutely ( &nbsp;&nbsp;&nbsp; ).",
+    options: ["magnificent", "ugly", "ordinary", "dull"],
+    correct: 0,
+    answer: "magnificent",
+    meaning: "장엄한, 웅장한",
+    explanation: "바다 위로 지는 석양의 광경은 정말 장엄했다.",
+    fullText: "The view of the sunset over the ocean was absolutely magnificent."
+  },
+  {
+    question: "Only students who are ( &nbsp;&nbsp;&nbsp; ) can apply for the scholarship.",
+    options: ["eligible", "ineligible", "unqualified", "disqualified"],
+    correct: 0,
+    answer: "eligible",
+    meaning: "자격이 있는, 적격의",
+    explanation: "자격이 있는 학생들만 장학금을 신청할 수 있다.",
+    fullText: "Only students who are eligible can apply for the scholarship."
+  },
+  {
+    question: "He decided to ( &nbsp;&nbsp;&nbsp; ) with his plan despite the difficulties.",
+    options: ["persist", "quit", "abandon", "give up"],
+    correct: 0,
+    answer: "persist",
+    meaning: "끈질기게 계속하다",
+    explanation: "그는 어려움에도 불구하고 자신의 계획을 계속하기로 결정했다.",
+    fullText: "He decided to persist with his plan despite the difficulties."
+  },
+  {
+    question: "She tends to ( &nbsp;&nbsp;&nbsp; ) people who lie to her.",
+    options: ["despise", "admire", "respect", "honor"],
+    correct: 0,
+    answer: "despise",
+    meaning: "경멸하다, 멸시하다",
+    explanation: "그녀는 자신에게 거짓말을 하는 사람들을 경멸하는 경향이 있다.",
+    fullText: "She tends to despise people who lie to her."
+  },
+  {
+    question: "The speaker tried to ( &nbsp;&nbsp;&nbsp; ) the memory of past heroes.",
+    options: ["invoke", "ignore", "neglect", "overlook"],
+    correct: 0,
+    answer: "invoke",
+    meaning: "호소하다, 불러내다",
+    explanation: "연설자는 과거 영웅들의 기억을 불러내려 했다.",
+    fullText: "The speaker tried to invoke the memory of past heroes."
+  },
+  {
+    question: "The earthquake ( &nbsp;&nbsp;&nbsp; ) the entire town.",
+    options: ["devastated", "built", "restored", "repaired"],
+    correct: 0,
+    answer: "devastated",
+    meaning: "황폐화시키다, 파괴하다",
+    explanation: "그 지진은 마을 전체를 파괴했다.",
+    fullText: "The earthquake devastated the entire town."
+  },
+  {
+    question: "The professor asked the student to ( &nbsp;&nbsp;&nbsp; ) on his answer.",
+    options: ["elaborate", "simplify", "shorten", "condense"],
+    correct: 0,
+    answer: "elaborate",
+    meaning: "자세히 설명하다",
+    explanation: "교수는 학생에게 자신의 대답을 자세히 설명해 달라고 요청했다.",
+    fullText: "The professor asked the student to elaborate on his answer."
+  },
+  {
+    question: "All regional offices are ( &nbsp;&nbsp;&nbsp; ) to the company's headquarters.",
+    options: ["subordinate", "independent", "autonomous", "self-governing"],
+    correct: 0,
+    answer: "subordinate",
+    meaning: "하위의, 종속된",
+    explanation: "모든 지역 사무소는 회사 본사에 종속된다.",
+    fullText: "All regional offices are subordinate to the company's headquarters."
+  },
+  {
+    question: "The street was full of ( &nbsp;&nbsp;&nbsp; ) as vendors set up their stalls.",
+    options: ["bustle", "calm", "quiet", "stillness"],
+    correct: 0,
+    answer: "bustle",
+    meaning: "분주함, 붐빔",
+    explanation: "노점상들이 가판대를 세우면서 거리는 분주함으로 가득했다.",
+    fullText: "The street was full of bustle as vendors set up their stalls."
+  },
+  {
+    question: "Many people rely on the subway for daily ( &nbsp;&nbsp;&nbsp; ).",
+    options: ["transit", "immobility", "stagnation", "standstill"],
+    correct: 0,
+    answer: "transit",
+    meaning: "운송, 통과, 교통",
+    explanation: "많은 사람들이 일상적인 교통 수단으로 지하철에 의존한다.",
+    fullText: "Many people rely on the subway for daily transit."
+  },
+  {
+    question: "There was a ( &nbsp;&nbsp;&nbsp; ) change in his voice when he mentioned the accident.",
+    options: ["subtle", "obvious", "clear", "evident"],
+    correct: 0,
+    answer: "subtle",
+    meaning: "미묘한, 감지하기 힘든",
+    explanation: "그가 사고를 언급했을 때 그의 목소리에는 미묘한 변화가 있었다.",
+    fullText: "There was a subtle change in his voice when he mentioned the accident."
+  },
+  {
     question: "The lawyer argued that his client had a ( &nbsp;&nbsp;&nbsp; ) right to defend himself.",
     options: ["legitimate", "illegal", "unlawful", "illicit"],
     correct: 0,
@@ -155,7 +371,7 @@
     explanation: "그 변호사는 그의 의뢰인이 자신을 방어할 정당한 권리를 가지고 있다고 주장했다.",
     fullText: "The lawyer argued that his client had a legitimate right to defend himself."
   },
-            {
+  {
     question: "Only students who are ( &nbsp;&nbsp;&nbsp; ) can apply for the scholarship.",
     options: ["eligible", "ineligible", "unqualified", "disqualified"],
     correct: 0,
